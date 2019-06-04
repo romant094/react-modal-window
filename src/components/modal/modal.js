@@ -56,8 +56,7 @@ export default class Modal extends Component {
             <div className={wrapper}>
                 <div className={modal}
                      onTouchStart={this.onTouchStart}
-                     onTouchEnd={this.onTouchEnd}
-                >
+                     onTouchEnd={this.onTouchEnd}>
                     <div className={modalHeader}>
                         <div className={containerHeader}>
                             <p className={modalTitle}>

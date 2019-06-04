@@ -92,6 +92,7 @@
     .modal{
         max-width: 640px;
         padding: 20px 0 20px 20px;
+        border-left: 3px solid #A41111;
     }
     .containerHeader{
         border-bottom: 1px solid #eee;
