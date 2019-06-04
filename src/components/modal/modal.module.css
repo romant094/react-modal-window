@@ -1,0 +1,106 @@
+.containerHeader{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+.containerContent{
+    padding: 15px 15px 0 0;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9998;
+    padding: 25px 0;
+}
+
+.modal {
+    background-color: #fff;
+    box-shadow: 2px 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    position: absolute;
+    top: 20px;
+    z-index: 9999;
+    padding: 15px 0 15px 15px;
+    box-sizing: border-box;
+}
+
+.modalHeader{
+    position: relative;
+}
+
+.modalTitle{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    color: #1500A4;
+    font-weight: bold;
+}
+
+.modalTopic{
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.modalClose{
+    display: none;
+    position: absolute;
+    right: 25px;
+    top: 0;
+    cursor: pointer;
+}
+
+.contentInfo{
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.icon{
+    margin-right: 10px;
+}
+
+.modalLink{
+    transition: all 0.5s;
+    color: #035577;
+}
+
+.modalLink:hover{
+    color: #A41111;
+}
+
+@media screen and (min-width:450px) {
+    .modal{
+        max-width: 80%;
+        padding: 20px 0 20px 20px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .modal{
+        max-width: 640px;
+        padding: 20px 0 20px 20px;
+    }
+    .containerHeader{
+        border-bottom: 1px solid #eee;
+        padding-bottom: 15px;
+    }
+    .containerContent{
+        padding: 15px 15px 0 0;
+    }
+    .modalClose{
+        display: block;
+    }
+}

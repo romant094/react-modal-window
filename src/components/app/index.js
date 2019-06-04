@@ -1,11 +1,30 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Modal from "../modal";
 
-const App = () => {
-    return (
-        <div>
-            <h1>Hello world!</h1>
-        </div>
-    )
-};
+export default class App extends Component {
+    state = {isModalOpen: false};
 
-export default App;
+    openModal() {
+        this.setState({isModalOpen: true});
+    }
+
+    closeModal() {
+        this.setState({isModalOpen: false});
+    }
+
+    render() {
+        const {isModalOpen} = this.state;
+
+        return (
+            <div>
+                <button style={{margin: '100px',padding:'10px'}} onClick={() => this.openModal()}>Open modal</button>
+                <Modal
+                    isOpen={isModalOpen}
+                    onClose={() => this.closeModal()}
+                    docs={['/doc1.pdf', '/doc2.pdf']}>
+                </Modal>
+            </div>
+        );
+    }
+}
+
